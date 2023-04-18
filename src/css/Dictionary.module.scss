@@ -1,0 +1,33 @@
+.Dictionary {
+  display: flex;
+
+  .Section1 {
+    margin-top: 2rem;
+    width: 30%;
+    height: 100vh;
+    ul {
+      list-style: none;
+      li {
+        background: rgb(31, 179, 51);
+        border-radius: 1rem;
+        margin: 0.2rem 0;
+        color: white;
+      }
+    }
+  }
+  .Section2 {
+    margin-top: 2rem;
+    width: 70%;
+    height: 100vh;
+
+    ul {
+      list-style: none;
+      li {
+        background: rgb(246, 101, 52);
+        margin: 0.2rem auto;
+        display: flex;
+        border-radius: 1rem;
+      }
+    }
+  }
+}

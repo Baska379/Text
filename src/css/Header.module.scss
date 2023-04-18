@@ -1,0 +1,80 @@
+.Header {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  width: 100%;
+  height: 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+
+  .Button {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+
+    .game {
+      text-decoration: none;
+      background: rgba(246, 244, 244, 0.815);
+      padding: 0.3rem 1rem;
+      border-radius: 0.5rem;
+      color: black;
+    }
+    .dictionary {
+      text-decoration: none;
+      background: rgba(246, 244, 244, 0.815);
+      padding: 0.3rem 1rem;
+      border-radius: 0.5rem;
+      color: black;
+    }
+  }
+  .Search {
+    flex: 2;
+    position: relative;
+    .search__input {
+      background: rgba(76, 227, 217, 0.601);
+      width: 90%;
+      z-index: 0;
+      position: relative;
+    }
+    .search__button {
+      top: 3px;
+      right: 9%;
+      position: absolute;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.694);
+      transition: 0.5s;
+      font-size: 0.7rem;
+
+      &:hover {
+        background: rgb(199, 23, 235);
+        color: white;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .Find {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    background: rgba(255, 255, 255, 0.364);
+    width: 40%;
+    height: auto;
+    overflow: auto;
+    ul {
+      list-style: none;
+      font-size: 0.8rem;
+      overflow: auto;
+      li {
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
